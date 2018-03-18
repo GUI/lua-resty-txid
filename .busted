@@ -1,0 +1,16 @@
+-- vi: set ft=lua:
+
+return {
+  _all = {
+    lua = "resty",
+
+    -- Randomize test order.
+    ["shuffle-files"] = true,
+    ["shuffle-tests"] = true,
+
+    -- Disable auto-insulate in busted, since it causes random segfaults with
+    -- FFI based tests:
+    -- https://github.com/Olivine-Labs/busted/issues/496#issuecomment-207960067
+    ["auto-insulate"] = false,
+  },
+}
