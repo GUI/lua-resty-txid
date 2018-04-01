@@ -1,8 +1,8 @@
 version: 2
 jobs:
-  docker:
-    - image: debian:stretch
   build:
+    docker:
+      - image: debian:stretch
     steps:
       - checkout
       - setup_remote_docker
