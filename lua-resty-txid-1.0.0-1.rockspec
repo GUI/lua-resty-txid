@@ -1,11 +1,12 @@
-package = "resty-txid"
-version = "git-1"
+package = "lua-resty-txid"
+version = "1.0.0-1"
 source = {
   url = "git://github.com/GUI/lua-resty-txid.git",
+  tag = "v1.0.0",
 }
 description = {
-  summary = "",
-  detailed = "",
+  summary = "Unique transaction IDs for OpenResty",
+  detailed = "Generate sortable, unique transaction or request IDs.",
   homepage = "https://github.com/GUI/lua-resty-txid",
   license = "MIT",
 }

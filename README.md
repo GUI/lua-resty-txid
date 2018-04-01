@@ -14,16 +14,16 @@ lua-resty-txid is a LuaJIT port of [ngx\_txid](https://github.com/streadway/ngx_
 
 ## Installation
 
-Via OPM:
+Via [OPM](https://opm.openresty.org):
 
 ```sh
 opm get GUI/lua-resty-txid
 ```
 
-Or via Luarocks:
+Or via [LuaRocks](https://luarocks.org):
 
 ```sh
-luarocks install resty-txid
+luarocks install lua-resty-txid
 ```
 
 ## Usage
@@ -187,6 +187,14 @@ After checking out the repo, Docker can be used to run the test suite:
 
 ```sh
 docker-compose run --rm app make test
+```
+
+### Release Process
+
+To publish releases to OPM and LuaRocks:
+
+```sh
+VERSION=x.x.x make release
 ```
 
 ## Credits
