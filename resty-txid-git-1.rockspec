@@ -13,6 +13,6 @@ build = {
   type = "builtin",
   modules = {
     ["resty.txid"] = "lib/resty/txid.lua",
-    ["resty.txid.base32"] = "lib/resty/txid/base32.lua",
+    ["resty.txid.base32hex"] = "lib/resty/txid/base32hex.lua",
   },
 }

@@ -1,0 +1,7 @@
+version: 2
+jobs:
+  build:
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run: docker-compose run --rm app make test
